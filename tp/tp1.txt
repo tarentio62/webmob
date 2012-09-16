@@ -1,0 +1,11 @@
+TP 1 : Fondamentaux et construction de page
+===========================================
+Objectif : Création d'une application web
+Résumé   : faire une application dur les Bandes dessinnées avec DB coté serveur pour la page recherche + resultat
+
+
+
+
+* Faire une page accueil +style CSS
+* Faire page de recherche
+
