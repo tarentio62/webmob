@@ -34,6 +34,7 @@
 
         <div class="wrapper">
             <div id="content">
+                <h1>Bienvenue sur mybd.fr</h1>
                 <p>Vous trouverez sur ce site toutes les informations utiles sur le monde de la bande dessinée. Ce site est fait pour vous aider a trouver plein d'informations sur vos personnages de BD favoris.</p>
             </div>
         </div>

@@ -59,7 +59,7 @@ Résumé   : Installer tout les outils nécéssaires
     * Choisir la branche master
     * Valider le chemin git
   * Dans projet, clic droit, menu git -> pull
-    * Saisirla branche distante "master" puis valider
+    * Saisir la branche distante "master" puis valider
     * Choisir l'association branche master -> master/master
     * Les fichiers de votre branche apparaissent
     * Tester dans le navigateur pour voir les fichiers
