@@ -5,7 +5,7 @@ Résumé   : Installer tout les outils nécéssaires
 
 1.Install Chrome + plugin firefox
   * Rechercher Chrome sur google, et installer le navigateur "chrome"
-  * Rechercher les plugin firebug et webdevelopper pour firefox 
+  * Rechercher les plugin firebug et webdevelopper pour firefox
 
 2. Install de easyPhp
   * Sur http://www.easyphp.org/download.php Choisir EasyPHP 12.0 with PHP 5.4.4
@@ -47,7 +47,7 @@ Résumé   : Installer tout les outils nécéssaires
   * aller sur http://localhost/home/index.php et cliquer sur ajouter un alias
     * créer un alias nommé "sitebd"
     * renvoi vers votre dossier (ex: C:\Users\cl\Desktop\site\www)
-    * enregistrer 
+    * enregistrer
   * vérifier que http://localhost/sitebd/ fonctionne
 
 8. Récuperer votre fork github
@@ -70,3 +70,4 @@ Résumé   : Installer tout les outils nécéssaires
   * Faire un git commit
   * Faire un git push
   * Aller voir sur votre github pour constater le changement
+
