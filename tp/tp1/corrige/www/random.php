@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="fr">
     <head>
-        <title>Bienvenue sur mybd.fr</title>
-        <meta charset="utf-8"/>
-        <meta name="description" content="Base de donn&eacute;e sur les Bandes dessin&eacute;es"/>
-        <meta name="author" content="Christophe"/>
-        <meta name="HandheldFriendly" content="True"/>
-        <meta name="MobileOptimized" content="320"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <link rel="stylesheet" href="jss/style.css"/>
-        <link rel="shortcut icon" href="img/favicon.ico"/>
-        <link rel="apple-touch-icon" href="img/logo-57.png"/>
-        <link rel="apple-touch-icon" sizes="72x72" href="img/logo-72.png"/>
-        <link rel="apple-touch-icon" sizes="114x114" href="img/logo-114.png"/>
-        <link rel="apple-touch-startup-image" href="img/splash-touch.png"/>
+        <title>Une Bande D&eacute;sin&eacute;e au hasard</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Base de donn&eacute;e sur les Bandes dessin&eacute;es">
+        <meta name="author" content="Christophe">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="jss/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon" href="img/logo-57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/logo-72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/logo-114.png">
+        <link rel="apple-touch-startup-image" href="img/splash-touch.png">
     </head>
 
     <body>
@@ -43,8 +43,8 @@
 
         <div class="wrapper">
             <div id="content">
-                <h1>Bienvenue sur mybd.fr</h1>
-                <p>Vous trouverez sur ce site toutes les informations utiles sur le monde de la bande dessin&eacute;e. Ce site est fait pour vous aider a trouver plein d'informations sur vos personnages de BD favoris.</p>
+                <h1>Trouver une Bande Dessin&eacute;e au hasard</h1>
+                <p>plus tard, remplir cette section avec du contenu dynamique</p>
             </div>
         </div>
         <br class="clear"/>

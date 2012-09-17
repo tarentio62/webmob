@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
     <head>
-        <title>Recherche de BD</title>
+        <title>Derni&egrave;res BD rentr&eacute;es</title>
         <meta charset="utf-8"/>
         <meta name="description" content="Base de donn&eacute;e sur les Bandes dessin&eacute;es"/>
         <meta name="author" content="Christophe"/>
@@ -43,53 +43,12 @@
 
         <div class="wrapper">
             <div id="content">
-                <h1>Recherchez une Bande dessin&eacute;e ?</h1>
-                <form action="search.php" method="GET">
-                    <fieldset>
-                        <legend>Crit&egrave;re de recherche</legend>
-                        <div class="column">
-                            <div>
-                                <label for="auteur">Auteur</label>
-                                <input id="auteur" name="auteur">
-                            </div>
-                            <div>
-                                <label for="nationalite">Nationalit&eacute;</label>
-                                <input id="nationalite" name="nationalite">
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div>
-                                <label for="titre">Titre</label>
-                                <input id="titre" name="titre">
-                            </div>
-                            <div>
-                                <label for="annee">Ann&eacute;e</label>
-                                <input id="annee" name="annee">
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div>
-                                <label for="prix">Prix</label>
-                                <input id="prix" name="prix">
-                            </div>
-                            <div>
-                                <label for="dispo">Disponibilit&eacute;</label>
-                                <input id="dispo" name="dispo">
-                            </div>
-                        </div>
-                        <br class="clear"/>
-                        <div class="footer">
-                            <div>
-                                <input type="submit" id="submit" name="submit" value="Rechercher">
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+                <h1>Les derni&egrave;res bandes dessin&eacute;es rentr&eacute;es</h1>
+                <p>plus tard, remplir cette section avec du contenu dynamique</p>
             </div>
         </div>
         <br class="clear"/>
 
-        <div class="wrapper">
         <div id="footer">
             <ul>
                 <li><a href="search.php">Recherche de BD</a></li>
@@ -97,7 +56,6 @@
                 <li><a href="random.php">Au hasard</a></li>
                 <li><a href="legal.php">Info l&eacute;gales</a></li>
             </ul>
-        </div>
         </div>
     </body>
 </html>
