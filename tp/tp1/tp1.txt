@@ -1,35 +1,46 @@
 TP 1 : Fondamentaux et construction de page
 ===========================================
-Objectif : CrÃ©ation d'une application web
-RÃ©sumÃ©   : faire une application dur les Bandes dessinnÃ©es avec DB cotÃ© serveur pour la page recherche + resultat
+Objectif : Création d'une application web
+Résumé   : faire une application dur les Bandes dessinnées avec DB coté serveur pour la page recherche + resultat
 
-1. CrÃ©ation de la homepage
-  * CrÃ©er un nouveau fichier php web page, nommÃ©e index.php
+1. Création de la homepage
+  * Créer un nouveau fichier php web page, nommée index.php
   * Mettre la structure de base d'un document html5 (html, head title, body)
   * Rajouter les meta HandheldFriendly a true, MobileOptimized a 320 et viewport a "width=device-width, initial-scale=1.0"
-  * Ajouter une feuille de style nommÃ©e style.css dans  le rÃ©pertoire jss
+  * Ajouter une feuille de style nommée style.css dans  le répertoire jss
   * Lier cette feuille de style dans la page d'accueil
   * Utiliser dans le html le fichier img/favicon.ico
-  * Utiliser dans le html les balises link pour les logo sur iOS (link apple-touch-icon avec 3 size diffÃ©rentes) fichiers images logo-xx.png
+  * Utiliser dans le html les balises link pour les logo sur iOS (link apple-touch-icon avec 3 size différentes) fichiers images logo-xx.png
   * Utiliser dans le html les balises link pour le boot iOS (apple-touch-startup-image). fichier image splash-touch.png
 
-2. PrÃ©parer les styles
+2. Préparer les styles
   * Mettre des styles css sur le body (texte arial, 1.2em, #333 avec une hauteur de ligne de 1.5em. Annuler les marges et padding)
   * Mettre l'image bg-maison.png en fond de page, avec la couleur #aaa en remplissage
   * Dans le html, mettre une dive#header avec un h1 et un h2. Rmeplir de texte
   * En css, faire les style de #header pour etre static, 100% de largeur
-  * En css, faire les style h1 et h2 pour prendre 980px de large, centrÃ©, et l'un en dessous de l'autre, sans marge
-  * Faire une style pour cacher le soulignÃ© des liens
+  * En css, faire les style h1 et h2 pour prendre 980px de large, centré, et l'un en dessous de l'autre, sans marge
+  * Faire une style pour cacher le souligné des liens
 
-3. CrÃ©er un menu
-  * crÃ©er une div#menu
+3. Créer un menu
+  * créer une div#menu
   * mettre une liste de point, contenant des liens vers les pages search.php, last.php, random.php, legal.php
   * Dans la partie CSS, mettre les styles pour l'afficher en ligne, sur fond gris et sur 980px.
 
 4. Reproduire le menu en pied de page
   * copier le menu et le mettre dans une div#footer
-  * copier les styles css mais ne pas mettre de couleur de fond. Par contre coloriser les liens en gris foncÃ©
+  * copier les styles css mais ne pas mettre de couleur de fond. Par contre coloriser les liens en gris foncé
   * dans les styles du pied de page, lors du survol, mettre une couleur de fond transparent et foncer la couleur de la police (#000)
+
+5. Créer les pages du menu sur le même model:
+  * page search.php pour le moteur de recherche
+    * dans la zone de contenu, mettre un formulaire, en GET vers la meme page
+    * Les critères sont date, titre, actif, nbre visite, auteur
+  * page last.php pour les dernière BD ajouté
+    *preparer l'affichage de la page BD
+  * page random pour le choix d'une BD alleatoire
+  * page legal avec un petit texte
+  * rajouter une page bd.php pour la fiche BD
+
 
 
 
