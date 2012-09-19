@@ -15,9 +15,41 @@
         <link rel="apple-touch-icon" sizes="72x72" href="img/logo-72.png"/>
         <link rel="apple-touch-icon" sizes="114x114" href="img/logo-114.png"/>
         <link rel="apple-touch-startup-image" href="img/splash-touch.png"/>
+        <script lang="javascript" type="text/javascript" src="jss/lib.js"> </script>
+        <script lang="javascript" type="text/javascript">
+            function memoriser() {
+                var form = document.forms[0];
+                myStore.set('auteur',form.auteur.value);
+                myStore.set('nationalite',form.nationalite.value);
+                myStore.set('titre',form.titre.value);
+                myStore.set('annee',form.annee.value);
+                myStore.set('prix',form.prix.value);
+                myStore.set('dispo',form.dispo.value);
+            }
+            function charger() {
+                var form = document.forms[0];
+                form.auteur.value = myStore.get('auteur')
+                form.nationalite.value = myStore.get('nationalite')
+                form.titre.value = myStore.get('titre')
+                form.annee.value = myStore.get('annee')
+                form.prix.value = myStore.get('prix')
+                form.dispo.value = myStore.get('dispo')
+            }
+            function reInit() {
+                myStore.clear()
+                var form = document.forms[0];
+                form.auteur.value =
+                    form.nationalite.value =
+                    form.titre.value =
+                    form.annee.value =
+                    form.prix.value =
+                    form.dispo.value = ""
+            }
+
+        </script>
     </head>
 
-    <body>
+    <body onload="charger()">
         <header class="wrapper">
             <a href="index.php">
                 <img src="img/logo-72.png" class="logo" alt="logo myBd" title="Moteur de recherche de Bd"/>
@@ -28,7 +60,7 @@
             </a>
         </header>
         <br class="clear"/>
-        
+
         <div class="wrapper">
             <nav id="menu">
                 <ul>
@@ -50,37 +82,38 @@
                         <div class="column">
                             <div>
                                 <label for="auteur">Auteur</label>
-                                <input id="auteur" name="auteur">
+                                <input id="auteur" name="auteur" onchange="memoriser()"/>
                             </div>
                             <div>
                                 <label for="nationalite">Nationalit&eacute;</label>
-                                <input id="nationalite" name="nationalite">
+                                <input id="nationalite" name="nationalite" onchange="memoriser()"/>
                             </div>
                         </div>
                         <div class="column">
                             <div>
                                 <label for="titre">Titre</label>
-                                <input id="titre" name="titre">
+                                <input id="titre" name="titre" onchange="memoriser()"/>
                             </div>
                             <div>
                                 <label for="annee">Ann&eacute;e</label>
-                                <input id="annee" type="range" name="annee" min="1900" max="2013" />
+                                <input id="annee" type="range" name="annee" min="1900" max="2013"  onchange="memoriser()"/>
                             </div>
                         </div>
                         <div class="column">
                             <div>
                                 <label for="prix">Prix</label>
-                                <input id="prix" name="prix">
+                                <input id="prix" name="prix" onchange="memoriser()"/>
                             </div>
                             <div>
                                 <label for="dispo">Disponibilit&eacute;</label>
-                                <input id="dispo" name="dispo">
+                                <input id="dispo" name="dispo" onchange="memoriser()"/>
                             </div>
                         </div>
                         <br class="clear"/>
                         <div class="footer">
                             <div>
-                                <input type="submit" id="submit" name="submit" value="Rechercher">
+                                <input type="submit" id="submit" name="submit" value="Rechercher"/>
+                                <input type="button" id="reinit" name="reinit" value="Re-initialiser" onclick="reInit()"/>
                             </div>
                         </div>
                     </fieldset>

@@ -15,9 +15,17 @@
         <link rel="apple-touch-icon" sizes="72x72" href="img/logo-72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="img/logo-114.png">
         <link rel="apple-touch-startup-image" href="img/splash-touch.png">
+        <script lang="javascript" type="text/javascript" src="jss/lib.js"> </script>
+        <script lang="javascript" type="text/javascript">
+            myGps.init()
+
+            function displayGeo() {
+                document.getElementById("geolocBox").innerHTML = myGps.get();
+            }
+        </script>
     </head>
 
-    <body>
+    <body onload="displayGeo()">
         <header class="wrapper">
             <a href="index.php">
                 <img src="img/logo-72.png" class="logo" alt="logo myBd" title="Moteur de recherche de Bd"/>
@@ -28,7 +36,7 @@
             </a>
         </header>
         <br class="clear"/>
-        
+
         <div class="wrapper">
             <nav id="menu">
                 <ul>
@@ -45,6 +53,10 @@
             <article>
                 <h1>Trouver une Bande Dessin&eacute;e au hasard</h1>
                 <p>plus tard, remplir cette section avec du contenu dynamique</p>
+                <p>Vos informations de géolocalisation sont les suivantes :
+                    <br/>
+                    <span id="geolocBox"><i>aucune</i></span>
+                </p>
             </article>
         </section>
         <br class="clear"/>
