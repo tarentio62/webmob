@@ -2,7 +2,8 @@ Ext.application({
     name: 'mybd',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'mybd.view.Main'
     ],
 
     views: ['Main'],

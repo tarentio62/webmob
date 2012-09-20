@@ -97,7 +97,8 @@
      * File / directory name matchers to ignore when copying to the builds, must be valid regular expressions
      */
     "ignore": [
-        "\.svn$"
+        "\.svn$",
+        "\.git$"
     ],
 
     /**
@@ -123,7 +124,7 @@
         "product": "touch",
         "minVersion": 3,
         "debug": false,
-        "logger": "no"
+        "logger": "false"
     },
 
     /**
