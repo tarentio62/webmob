@@ -1,0 +1,12 @@
+TP 5 : Sencha Touch
+===================
+Objectif : Faire une version SenchaTouch de notre projet
+Résumé   : Version la plus complète d'une application
+
+1. Préparation de l'environnement
+  * Télécharger sencha-touch-2 SDK et le Sencha SDK Tools
+  * Créer un répertoire dans votre projet, nommé st et copier le répertoire sencha touch 2 SDK dedans (renommer le répertoire en sdk)
+  * Installer le SenchaSDKTools
+  * Aller dans le répertoire st/sdk de notre application
+  * a la ligne de commande, lancer la commande sencha pour vérifier la détéction du sdk-sencha-touch
+  * lancer la commande "sencha generate app mybd ../mybd" pour créer votre projet
