@@ -16,8 +16,12 @@ Résumé   : Version la plus complète d'une application
 
 2. Building de notre application
   * changer dans le fichier de conf app.json la ligne 127 en "logger": "false" à la place de "logger": "no" (bug identifié)
-  * A la ligne de commande, depuis le répertoire mybd avec notre projet,
+  * à la ligne de commande, depuis le répertoire mybd avec notre projet,
     * lancer la commande "sencha app build testing ../testing"
     * lancer la commande "sencha app build prod ../prod"
 
 3. Re-créer les pages de notre site, en vous aidant de la doc sur http://docs.sencha.com/touch/2-0/
+   * video sur la page d'accueil
+   * formulaire (affichage uniquement)
+   * Geolocalisation
+   * texte simple pour les infos légales
