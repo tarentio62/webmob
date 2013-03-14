@@ -4,6 +4,8 @@ Objectif : Faire une version iUI de notre projet
 Résumé   : Version simplifiée de iUI
 
 1. Préparation de l'environnement
+
+
   * Créer un répertoire iUI
   * Copier la page index.php dans ce répertoire
     * Dans la page d'index iui, changer les chemins cassés (image + appel css et js)
