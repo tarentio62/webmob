@@ -1,0 +1,132 @@
+ body {
+	font-family: "arial";
+	font-size: 1.2em;
+	color: #333;
+	line-height: 1.5em;
+	margin: 0px;
+	padding: 0px;
+    background: #aaaaaa url("../img/bg-maison.png") repeat-x scroll -20% 0;
+    font-size: 1.2em;
+    font-weight: 400;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.wrapper {
+	width: 100%;
+	display: block;
+	position: static;
+}
+
+#header {
+	width: 980px;
+	display: block;
+	margin: 0 auto;
+}
+
+#header .logo {
+	float: left;
+}
+
+#header .titre {
+	float: left;
+}
+
+#header h1 {
+	color: #123;
+	padding: 0px;
+	margin: 0px;
+}
+
+#header h2 {
+	color: #155;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#menu {
+	
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+	position: center;
+}
+
+#menu ul {
+	
+	display: block;
+	width: 100%;
+	list-style-type: none;
+}
+
+#menu li {
+	
+	display: inline;
+	width: 25%;
+	float: left;
+	background-color: #333;
+}
+
+#menu li:hover {
+background-color: silver;
+}
+
+#menu a {
+color: green;
+}
+
+#menufooter {
+	
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+	position: center;
+}
+
+#menufooter ul {
+	
+	display: block;
+	width: 100%;
+	list-style-type: none;
+}
+
+#menufooter li {
+	
+	display: inline;
+	width: 25%;
+	float: left;
+}
+
+#menufooter a {
+color:gray;
+}
+#menufooter a:hover {
+color:#000;
+}
+
+#contenu {
+	background-color:gray;
+	margin: 0 auto;
+	width:980px;	
+}
+
+#contenu input {
+	
+	display: block;
+	float:right;
+}
+#contenu label {
+	
+	display: block;
+	float:left;
+	
+}
+
