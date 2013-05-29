@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<title>Recherche de BD</title>
+<meta charset="utf-8" />
+<script>
+
+var isdrag = false;
+var x, y;
+var dobj;
+
+
+document.onreadystatechange = function(){
+	
+    if(document.readyState=='loaded' || document.readyState=='complete') {
+   
+
+
+    }
+}
+
+	function bougersouris(ev) 
+	{
+		if (isdrag) {
+
+			var lex, ley
+			
+			if (!ev) 
+				{
+				
+				ev = event;
+				
+				}
+			lex = tx+ ev.clientX - x ;
+			ley = ty + ev.clientY - y;
+			
+			if (ley>0) {
+				
+				dobj.style.left = lex +'px';
+				dobj.style.backgroundColor="rgb(" +(lex)/10+ "," + (ley) + "," + (lex)/10 + ")";
+				dobj.style.width = (lex + 'px');
+				dobj.style.width = (ley + 'px');
+				dobj.style.borderRadius=(ley)+'px';
+				console.log(dobj.style.rotation);
+				
+			}
+			if (ley>0) {
+				
+				dobj.style.top = ley +'px';
+			
+			}
+			
+			return false;
+			
+			
+		}
+		
+		}
+		
+		function selectmouse(ev)
+		{
+			console.log(ev);
+			if (ev)
+				{
+				
+				var fobj = ev.target;
+				
+				}
+			else
+				{
+				var fobj = ev.target;
+				ev=event;
+				
+				}
+			x = ev.clientX;
+			y = ev.clientY;
+			if (fobj.id == "palette")
+				{
+				isdrag = true;
+				console.log(isdrag);
+				dobj = fobj;
+				tx = parseInt(dobj.style.left);
+				ty = parseInt(dobj.style.top);
+				document.onmousemove = bougersouris;
+				return false
+				
+				
+				}
+		}
+
+		
+		
+document.onmousedown = selectmouse;
+document.onmouseup = function () { isdrag = false;};
+
+
+
+
+</script>
+</head>
+
+<body>
+<h1>FISTON</h1>
+
+<div id='palette' style='position:absolute;transform:rotate(66 deg);left:0px;top:0px;width:100px;height:300px;background-color:blue;'>
+
+drag and drop
+</div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<title>Recherche de BD</title>
+<meta charset="utf-8" />
+<script>
+
+
+var fenetre;
+
+document.onreadystatechange = function(){
+	
+    if(document.readyState=='loaded' || document.readyState=='complete') {
+  	 
+    	
+
+    	
+    	
+    	
+
+    	document.write("<input type='button' value='Lancer popup' onclick='decompte(10)' />");
+    	
+    	
+    	
+    	
+    	
+    	
+
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+var tab_pays = new Array();
+tab_pays[0]=['france',11];
+tab_pays[1]=['Belgique',10];
+tab_pays[2]=['Allemagne',12];
+tab_pays[3]=['Italie',22];
+
+document.write("<table border='1'>");
+document.write('<tr><td>Pays</td><td>Frais</td></tr>');
+
+// boucle tableau
+for (i=0;i<tab_pays.length;i++)
+	{	
+	
+	   if(i % 2 == 0){ 
+			
+			 document.write("<tr style='background-color: pink;'>");
+
+	      }
+	   
+	   else
+	     { 
+
+	        document.write("<tr style='background-color: blue;'>");
+	      }   
+	
+	document.write('<td>');
+	document.write(tab_pays[i][0]);
+	document.write('</td>');
+	document.write('<td>');
+	document.write(tab_pays[i][1]);
+	document.write('</td>');
+	document.write('</tr>');
+	
+	
+	}
+ document.write('</table>');
+	
+ 
+ document.write("<select>");
+ 
+ 
+ //boucle liste
+ for (i=0;i<tab_pays.length;i++)
+ 	{	
+
+	  if(i % 2 == 0){ 
+		  
+		   document.write("<option style='background-color:yellow;' value="+ tab_pays[i][1]+">"+tab_pays[i][0]+"</option>");
+
+
+	      }
+	   
+	   else
+	      { 
+		   
+		   document.write("<option style='background-color:red;' value="+ tab_pays[i][1]+">"+tab_pays[i][0]+"</option>");
+	      }  
+ 	
+ 	}
+  document.write('</select>');
+  
+  
+  
+  document.write("<input id='prix' type='text'>Prix</input>");
+  document.write("<select id='taux'><option value='19.6'>19.6%</option><option value='5.5'>5.5%</option></select>");
+  document.write("<button type='button' onclick='afficherprix()'>Calculer</button>");
+  document.write("<p id='p'></p>");
+
+  document.write("<h3>Liste des plugins</h3>)");
+  document.write("<div id='text'></div>");
+  listePlugin();
+    }
+}
+
+function afficherprix() {
+	 
+	  var e = document.getElementById("taux");
+
+	  var prix = document.getElementById("prix").value;
+
+	  var taux = e.options[e.selectedIndex].value;
+
+	  alert(calculeprix(prix,taux));
+	  
+	
+	  
+}
+
+
+function calculeprix(prix,taux) {
+	  
+	  
+	  return (prix*(1+(taux/100)));
+	  
+
+	  
+}
+
+
+
+function decompte(val) {
+	
+	if (val == 0)
+		{
+		lex = 250;
+		ley = 150;
+		
+		fenetre = window.open("enfant.html","popup","location=no,menubar=no,resizable=no,scrollbar=no,status=no,toolbar=no, top=" + ley + ", left=" + lex + ", width=300, height=200");
+		ecouteFenetre();
+		}
+	else 
+		{
+		//doc=document.getElementById("leaff");
+		//doc.innerHTML = "<h1>"+ val + "</h1>;"
+		val--;
+		chrono = setTimeout("decompte(" + val + ")",1000)
+		console.log(val);
+		
+		}
+	
+	
+}
+
+function ecouteFenetre() {
+	
+	if (fenetre.closed == true) {
+
+  		alert('fenetre ferme');
+		
+		}
+	else 
+		{
+		//doc=document.getElementById("leaff");
+		//doc.innerHTML = "<h1>"+ val + "</h1>;"
+		chrono = setTimeout("ecouteFenetre()",500)
+		
+		}	
+	
+}
+
+
+
+
+function enfant_m_appelle(koi)
+{
+	
+	
+	doc = document.getElementById("leaff");
+	doc.innerHTML = "<h1>" + koi + "</h1>";
+	
+
+}
+	
+function appel()
+{
+	
+	fenetre.appel();
+}
+
+
+
+
+
+function listePlugin() {
+	document.write('<ol>');
+	for (i= 0;i < navigator.plugins.length; i++) {
+		
+		
+		var plugin = navigator.plugins[i];
+		
+		document.write('<li>' + plugin.name + ' ' + plugin.filename + '  ' + plugin.description + '</li>');
+		
+		
+		
+		
+	}
+	
+	
+	document.write('</ol>');
+	console.log(navigator);
+	document.write(navigator.plugins[12][0].enabledPlugin);
+}
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
